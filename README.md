@@ -13,12 +13,11 @@
 
 ### 07 Creating Your Own GraphQL API
 
-    $ npm install --save graphql-yoga              
+    $ npm install --save graphql-yoga
 
     $ npm start
 
 http://localhost:4000/
-
 
 <br/>
 
@@ -80,7 +79,6 @@ http://localhost:4000/
 
 ![Application](/img/pic-02-08.png?raw=true)
 
-
 <br/>
 
 ### 15 Relational Data. Arrays
@@ -88,7 +86,6 @@ http://localhost:4000/
 <br/>
 
 ![Application](/img/pic-02-09.png?raw=true)
-
 
 <br/>
 
@@ -152,7 +149,6 @@ http://localhost:4000/
 
 ![Application](/img/pic-03-04.png?raw=true)
 
-
 <br/>
 
 ### 04 The Object Spread Operator with Node.js
@@ -161,7 +157,7 @@ http://localhost:4000/
 
 <br/>
 
-### 05 The Input Type  
+### 05 The Input Type
 
 <br/>
 
@@ -203,7 +199,6 @@ http://localhost:4000/
 
 ![Application](/img/pic-03-08.png?raw=true)
 
-
 <br/>
 
 ## 04 GraphQL Basics. Subscriptions
@@ -230,11 +225,9 @@ https://github.com/apollographql/graphql-subscriptions
 
 ![Application](/img/pic-04-03.png?raw=true)
 
-
 <br/>
 
 ### 04 Setting up a Posts Subscription
-
 
 **Create post**
 
@@ -287,10 +280,9 @@ subscription {
 
 ![Application](/img/pic-04-05.png?raw=true)
 
-
 <br/>
 
-```js 
+```js
 mutation {
   deletePost (
     id: "12"
@@ -302,10 +294,10 @@ mutation {
   }
 }
 ```
+
 <br/>
 
 ![Application](/img/pic-04-06.png?raw=true)
-
 
 <br/>
 
@@ -315,7 +307,7 @@ mutation {
     id: "10",
     data: {
       body: "This is my new body"
-    } 
+    }
   )
   {
     id
@@ -364,7 +356,7 @@ subscription {
         name
       }
     }
-    
+
   }
 }
 
@@ -373,7 +365,6 @@ subscription {
 <br/>
 
 ![Application](/img/pic-04-08.png?raw=true)
-
 
 ```js
 
@@ -395,7 +386,6 @@ mutation {
 
 ![Application](/img/pic-04-09.png?raw=true)
 
-
 ```js
 
 mutation {
@@ -404,13 +394,12 @@ mutation {
     text
   }
 }
-  
-```  
+
+```
 
 <br/>
 
 ![Application](/img/pic-04-10.png?raw=true)
-
 
 <br/>
 
@@ -466,7 +455,6 @@ http://prisma.io
 
 http://localhost:4466/
 
-
 <br/>
 
 ### 07 Exploring the Prisma GraphQL API
@@ -484,8 +472,9 @@ mutation {
     name
   }
 }
-  
+
 ```
+
 <br/>
 
 ![Application](/img/pic-05-02.png?raw=true)
@@ -494,9 +483,7 @@ mutation {
 
 ![Application](/img/pic-05-03.png?raw=true)
 
-
 <br/>
-
 
 ```js
 
@@ -545,7 +532,7 @@ mutation {
       id
       name
     }
-  } 
+  }
 }
 
 ```
@@ -570,7 +557,7 @@ mutation {
     name
     email
   }
-  
+
 }
 ```
 
@@ -601,9 +588,9 @@ mutation {
       name
     }
   }
-  
+
 }
-  
+
 ```
 
 <br/>
@@ -645,11 +632,10 @@ mutation {
     name
     email
   }
-  
-}
-  
-```
 
+}
+
+```
 
 <br/>
 
@@ -679,9 +665,9 @@ mutation {
       name
     }
   }
-  
+
 }
-  
+
 ```
 
 <br/>
@@ -717,7 +703,6 @@ query{
 
     $ npm run get-schema
 
-
 <br/>
 
 ### 11 Using Prisma Bindings
@@ -727,7 +712,6 @@ query{
 output:
 
 ```json
-
 [
   {
     "id": "cjoipm2kq000d0a76qpdn5zrp",
@@ -747,7 +731,6 @@ output:
     "posts": []
   }
 ]
-
 ```
 
 <br/>
@@ -845,7 +828,7 @@ mutation {
         connect: {
           id: "cjoj2hhoa006p0a76gq27yuj9"
         }
-      }, 
+      },
       author: {
         connect: {
           id: "cjoj2karr006w0a76epo1by00"
@@ -927,7 +910,6 @@ query {
 
 ```
 
-
 <br/>
 
 ## 06 Authentication with GraphQL
@@ -959,7 +941,6 @@ query {
 <br/>
 
 ### 05 Adding Prisma into GraphQL Mutations
-
 
 ```js
 
@@ -1062,7 +1043,7 @@ subscription {
         name
       }
     }
-    
+
   }
 }
 
@@ -1074,7 +1055,6 @@ subscription {
 
     $ prisma deploy
     $ prisma token
-
 
 <br/>
 
@@ -1136,8 +1116,9 @@ mutation {
     }
     token
   }
-} 
+}
 ```
+
 <br/>
 
 ```js
@@ -1164,13 +1145,12 @@ mutation {
 ### 14 Validating Auth Tokens
 
 {
-  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjam9ram5mbW8wMDJsMDk3NnlsMWJ2cHpnIiwiaWF0IjoxNTQyNDA0MjIzfQ.4A-G50GPGxjcIEsHtEmdY5AvHdKxFlvB15TzZ2hVEcc"
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjam9ram5mbW8wMDJsMDk3NnlsMWJ2cHpnIiwiaWF0IjoxNTQyNDA0MjIzfQ.4A-G50GPGxjcIEsHtEmdY5AvHdKxFlvB15TzZ2hVEcc"
 }
 
 <br/>
 
-![Application](/img/pic-06-04?raw=true)
-
+![Application](/img/pic-06-04.png?raw=true)
 
 <br/>
 
@@ -1186,7 +1166,7 @@ mutation {
 
 <br/>
 
-![Application](/img/pic-06-05?raw=true)
+![Application](/img/pic-06-05.png?raw=true)
 
 <br/>
 
@@ -1194,7 +1174,7 @@ mutation {
 
 <br/>
 
-![Application](/img/pic-06-06?raw=true)
+![Application](/img/pic-06-06.png?raw=true)
 
 <br/>
 
@@ -1239,6 +1219,7 @@ query {
 }
 
 ```
+
 <br/>
 
 ### 03 Pagination Using Cursors
@@ -1281,14 +1262,13 @@ prisma.io
 
 servers --> add new --> create new database --> heroku --> set up a server
 
+<br/>
+
+![Application](/img/pic-07-01.png?raw=true)
 
 <br/>
 
-![Application](/img/pic-07-01?raw=true)
-
-<br/>
-
-![Application](/img/pic-07-02?raw=true)
+![Application](/img/pic-07-02.png?raw=true)
 
 <br/>
 
@@ -1304,10 +1284,9 @@ servers --> add new --> create new database --> heroku --> set up a server
     ? Choose a name for your service marley-blogging-app
     ? Choose a name for your stage prod
 
-
 <br/>
 
-![Application](/img/pic-07-03?raw=true)
+![Application](/img/pic-07-03.png?raw=true)
 
 <br/>
 
@@ -1354,11 +1333,9 @@ mutation {
     $ git remote -v
     $ git push heroku master
 
-    
 <br/>
 
-![Application](/img/pic-07-04?raw=true)
-
+![Application](/img/pic-07-04.png?raw=true)
 
 <br/>
 
@@ -1366,7 +1343,7 @@ mutation {
 
     $ heroku config:set PRISMA_SECRET=mysupersecret
     $ heroku config:set JWT_SECRET=jwtsupersecret
-    
+
     $ cd prisma
     $ prisma deploy -e ../config/dev.env
 
@@ -1394,7 +1371,6 @@ mutation {
 
 ### 04 Testing and Assertions
 
-
 <br/>
 
 ### 05 Apollo Client in the Browser-1
@@ -1415,7 +1391,6 @@ https://www.apollographql.com/
     $ cd ../01-graphql-basics/
     $ npm run start
 
-
 <br/>
 
 ### 06 Apollo Client in the Browser-2
@@ -1432,13 +1407,11 @@ https://www.apollographql.com/
     $ npm install babel-register
     $ npm run test
 
-
 <br/>
 
 ### 08 Testing Mutations | not working !!!
 
     $ npm install --save apollo-boost graphql cross-fetch
-
 
 <br/>
 
@@ -1446,14 +1419,14 @@ I do not want to study graphql anymore!
 
 <br/>
 
-![Application](/img/pic-08-02.png?raw=true)  
+![Application](/img/pic-08-02.png?raw=true)
 
 <br/>
 
-![Application](/img/pic-08-03.png?raw=true)  
+![Application](/img/pic-08-03.png?raw=true)
 
 ---
 
 **Marley**
 
-<a href="https://jsdev.org">jsdev.org</a>  
+<a href="https://jsdev.org">jsdev.org</a>
